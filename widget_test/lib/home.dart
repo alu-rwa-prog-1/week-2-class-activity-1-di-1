@@ -38,12 +38,15 @@ class Home extends StatelessWidget {
       child: ClipPath(
         child: Image(
           image: AssetImage("assets/crew.png"),
-          height: 350.0,
-          width: 200.0,
+          height: 150.0,
+          width: 100.0,
           fit: BoxFit.cover,
         ),
       ),
     );
+
+    final button =
+        FloatingActionButton(child: Icon(Icons.add), onPressed: null);
 
     return Scaffold(
       appBar: AppBar(
@@ -79,6 +82,8 @@ class Home extends StatelessWidget {
             constrainedBox,
             Padding(padding: EdgeInsets.only(top: 60)),
             sizedBox,
+            Padding(padding: EdgeInsets.only(top: 60)),
+            button,
             Padding(padding: EdgeInsets.only(top: 60)),
             rotatedBox,
           ],
