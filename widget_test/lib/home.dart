@@ -58,6 +58,8 @@ class Home extends StatelessWidget {
           ),
         ),
       ),
+      // bottom navigation bar items that will enable the user to transition
+      //to different screens easily.
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
         items: [
